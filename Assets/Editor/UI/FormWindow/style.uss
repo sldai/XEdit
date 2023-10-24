@@ -1,0 +1,57 @@
+
+.FormWindow__Root {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.FormWindow__Root > #spacer {
+    width: 5px;
+    height: 5px;
+}
+
+.FormWindow__LeftContainer {
+    display: flex;
+    flex-direction: column;
+    width: 229px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.FormWindow__LeftContainer > #spacer {
+    width: 5px;
+    height: 5px;
+}
+
+.FormWindow__TLContainer {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    padding: 0 10px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.FormWindow__FilterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+}
+
+.FormWindow__FilterContainer > #spacer {
+    width: 5px;
+    height: 5px;
+}
+
+.FormWindow__RightContainer {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+}

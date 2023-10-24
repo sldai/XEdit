@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/UI/style.uss?fileID=7433441132597879392&amp;guid=d1ac5af679719e04e8ef8eb90b19f084&amp;type=3#style" />
+    <Style src="project://database/Assets/Editor/UI/Components/Table/style.uss?fileID=7433441132597879392&amp;guid=bcad8cd8092611940aba4618df990a4c&amp;type=3#style" />
+    <ui:VisualElement name="Root" class="Table__Root">
+        <ui:VisualElement name="Head" class="Table__Head">
+            <ui:VisualElement name="1">
+                <ui:Label tabindex="-1" text="Head" class="sl-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:MultiColumnListView fixed-item-height="20">
+            <!-- Columns and Column aren't Visual Elements or controls. They are considered attributes of MultiColumnListView. -->
+            <ui:Columns>
+                <ui:Column name="name" title="Name" width="80" />
+                <ui:Column name="populated" title="Populated?" width="80" />
+            </ui:Columns>
+        </ui:MultiColumnListView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/UI/style.uss?fileID=7433441132597879392&amp;guid=d1ac5af679719e04e8ef8eb90b19f084&amp;type=3#style" />
+    <Style src="project://database/Assets/Editor/UI/FormWindow/style.uss?fileID=7433441132597879392&amp;guid=2f1bbb5b1044de34ea5a1df2e688b9a0&amp;type=3#style" />
+    <ui:VisualElement name="Root" class="FormWindow__Root">
+        <ui:VisualElement name="LeftContainer" class="FormWindow__LeftContainer">
+            <ui:VisualElement name="TLContainer" class="FormWindow__TLContainer">
+                <ui:VisualElement name="FilterContainer" class="FormWindow__FilterContainer">
+                    <ui:Label tabindex="-1" text="Filter" parse-escape-sequences="true" display-tooltip-when-elided="true" class="sl-text" />
+                    <ui:VisualElement name="spacer" />
+                    <ui:TextField picking-mode="Ignore" label="Text Field" value="Name" name="FilterField" class="sl-text-field" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:TreeView view-data-key="unity-tree-view" focusable="true" fixed-item-height="22" name="CategoryTree" class="sl-tree FormWindow__CategoryTree" />
+        </ui:VisualElement>
+        <ui:VisualElement name="spacer"/>
+        <ui:VisualElement name="RightContainer" class="FormWindow__RightContainer"> 
+            <ui:MultiColumnListView name="FormTable" class="sl-table FormWindow__FormTable"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

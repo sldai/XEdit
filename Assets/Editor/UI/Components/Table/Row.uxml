@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/UI/style.uss?fileID=7433441132597879392&amp;guid=d1ac5af679719e04e8ef8eb90b19f084&amp;type=3#style" />
+    <Style src="project://database/Assets/Editor/UI/Components/Table/style.uss?fileID=7433441132597879392&amp;guid=bcad8cd8092611940aba4618df990a4c&amp;type=3#style" />
+    <ui:VisualElement name="Root" class="Row__Root">
+        <ui:VisualElement name="1" class="Row__Item">
+            <ui:Label tabindex="-1" text="Item" parse-escape-sequences="true" class="sl-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="2" class="Row__Item">
+            <ui:Label tabindex="-1" text="Item" parse-escape-sequences="true" class="sl-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="3" class="Row__Item">
+            <ui:Label tabindex="-1" text="Item" parse-escape-sequences="true" class="sl-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="4" class="Row__Item">
+            <ui:Label tabindex="-1" text="Item" parse-escape-sequences="true" class="sl-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="5" class="Row__Item">
+            <ui:Label tabindex="-1" text="Item" parse-escape-sequences="true" class="sl-text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

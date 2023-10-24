@@ -1,0 +1,46 @@
+.Row__Root {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: stretch;
+    border-top-width: 0.5px;
+    border-top-color: var(--shadow-color);
+}
+
+.Row__Root > .Row__Item {
+    display: flex;
+    padding: 5px;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-right-width: 0.5px;
+    border-right-color: var(--shadow-color);    
+}
+
+.Row__Root > #5 {
+    border-right-width: 0;
+}
+
+.Table__Root {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-width: 2px;
+    border-color: var(--rj-black-8);
+    background-color: var(--rj-white-80);
+}
+
+.Table__Head {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.Table__RowContainer {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,101 @@
+:root {
+    --rj-sldaiblack: rgba(24,24,24,1);
+    --rj-sldaiblack-light: rgba(34,34,34,1);
+    --rj-sldaiblack-high-contrast: rgba(43,45,47,1);
+    --rj-border: rgba(93,93,93,1);
+    --rj-white-80: rgba(255,255,255,0.800);
+    --rj-white-60: rgba(255,255,255,0.600);
+    --rj-white-38: rgba(255,255,255,0.380);
+    --rj-white-32: rgba(255,255,255,0.320);
+    --rj-white-30: rgba(255,255,255,0.300);
+    --rj-white-16: rgba(255,255,255,1);
+    --rj-white-10: rgba(255,255,255,0.100);
+    --rj-white-8: rgba(255,255,255,0.080);
+    --rj-white-5: rgba(255,255,255,0.050);
+    --rj-gray-16: rgba(221,221,221,0.160);
+    --rj-black-60: rgba(0,0,0,0.600);
+    --rj-black-40: rgba(0,0,0,0.400);
+    --rj-black-16: rgba(0,0,0,0.160);
+    --rj-black-8: rgba(0,0,0,0.080);
+    --rj-secondary-button-bg: rgba(221,221,221,1);
+    --rj-secondary-button-hover: rgba(170,170,170,1);
+    --rj-secondary-button-focus: rgba(187,187,187,1);
+    
+    --bg-color: rgba(217,217,217,1);
+    --border-color: rgba(179,179,179,1);
+    --button-color: rgba(188,188,188,1);
+    --text-color: rgba(27,27,27,1);
+    --shadow-color: rgba(0,0,0,0.250);
+}
+
+.sl-text {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sl-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    margin: 0;
+    padding: 5px 16px;
+    font-size: 14px;
+}
+
+.sl-text-field {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex: 1 0 0;
+    border-width: 0;
+    border-color: var(--border-color);
+    background-color: var(--rj-white-80);
+}
+
+.sl-text-field > Label {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.sl-text-field > #unity-text-input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    background-color: initial;
+}
+
+.sl-table {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-width: 1px;
+    border-color: var(--rj-black-8);
+    background-color: var(--rj-white-80);
+}
+
+.sl-tree {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border-width: 1px;
+    border-color: var(--rj-black-8);
+    background-color: var(--rj-white-80);
+}
+
+.sl-button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}

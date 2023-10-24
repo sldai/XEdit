@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/UI/style.uss?fileID=7433441132597879392&amp;guid=d1ac5af679719e04e8ef8eb90b19f084&amp;type=3#style" />
+    <Style src="project://database/Assets/Editor/UI/ModFileWindow/style.uss?fileID=7433441132597879392&amp;guid=05cf4615b6dab2243a200cbc2ea29250&amp;type=3#style" />
+    <ui:VisualElement name="Root" class="ModFileWindow__Root">
+        <ui:VisualElement name="LeftContainer" class="ModFileWindow__LeftContainer">
+            <ui:Label tabindex="-1" text="Plugin Files" parse-escape-sequences="true" display-tooltip-when-elided="true" class="sl-text" />
+            <ui:VisualElement name="spacer" />
+            <ui:MultiColumnListView fixed-item-height="22" name="ModTable" class="sl-table ModFileWindow__ModTable">
+                <ui:Columns>
+                    <ui:Column name="Enable" width="20" />
+                    <ui:Column name="File" title="File" width="120" />
+                    <ui:Column name="Status" title="Status" width="88" />
+                </ui:Columns>
+            </ui:MultiColumnListView>
+            <ui:VisualElement name="spacer" />
+            <ui:VisualElement name="ButtonGroup" class="sl-button-group">
+                <ui:Button text="Set Active" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SetActive" class="sl-button" />
+                <ui:Button text="New Mod" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewMod" class="sl-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="spacer" />
+        <ui:VisualElement name="MidContainer" class="ModFileWindow__MidContainer">
+            <ui:VisualElement name="AuthorContainer" class="ModFileWindow__AuthorContainer">
+                <ui:Label tabindex="-1" text="Author:" parse-escape-sequences="true" display-tooltip-when-elided="true" class="sl-text" />
+                <ui:VisualElement name="spacer" />
+                <ui:TextField picking-mode="Ignore" is-delayed="true" label="Text Field" value="Name" name="AuthorField" class="sl-text-field" />
+            </ui:VisualElement>
+            <ui:VisualElement name="spacer" />
+            <ui:Label tabindex="-1" text="Create:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Create" class="sl-text" />
+            <ui:VisualElement name="spacer" />
+            <ui:Label tabindex="-1" text="Last Update:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LastUpdate" class="sl-text" />
+            <ui:VisualElement name="spacer" />
+            <ui:Label tabindex="-1" text="Description" parse-escape-sequences="true" display-tooltip-when-elided="true" class="sl-text" />
+            <ui:VisualElement name="spacer" />
+            <ui:TextField picking-mode="Ignore" is-delayed="true" label="Text Field" value="Name" name="DescriptionField" class="sl-text-field" />
+        </ui:VisualElement>
+        <ui:VisualElement name="spacer" />
+        <ui:VisualElement name="RightContainer" class="ModFileWindow__RightContainer">
+            <ui:Label tabindex="-1" text="Parents" parse-escape-sequences="true" display-tooltip-when-elided="true" class="sl-text" />
+            <ui:VisualElement name="spacer" />
+            <ui:MultiColumnListView fixed-item-height="22" name="DependencyTable" class="sl-table ModFileWindow__DependencyTable">
+                <ui:Columns>
+                    <ui:Column name="File" title="File" width="120" />
+                </ui:Columns>
+            </ui:MultiColumnListView>
+        </ui:VisualElement>
+        <ui:VisualElement name="ApplyButtonGroup" class="sl-button-group ModFileWindow__ApplyButtonGroup">
+            <ui:Button text="Apply" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Apply" class="sl-button"/>
+            <ui:Button text="Cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Cancel" class="sl-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

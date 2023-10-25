@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,13 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class InstanceComponent : MonoBehaviour
 {
+    public string formID;
+    public event Action<Transform> onTransformChange;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent()
     }
 
     // Update is called once per frame
@@ -16,8 +20,7 @@ public class InstanceComponent : MonoBehaviour
     {
         if (transform.hasChanged)
         {
-            // Your code to handle the change
-            Debug.Log("changed");
+            onTransformChange?.Invoke(transform);
             transform.hasChanged = false; // Reset the flag
         }
     }
